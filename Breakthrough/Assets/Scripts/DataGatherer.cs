@@ -63,7 +63,9 @@ public class DataGatherer
     public static DataGatherer Get()
     {
         if (single == null)
-            single = new DataGatherer(Application.dataPath + "/Data/data.json");
+            single = new DataGatherer(Application.streamingAssetsPath + "/Data/data.json");
+
+        Debug.Log(Application.dataPath + "/Data/data.json");
 
         return single;
     }

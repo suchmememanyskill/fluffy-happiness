@@ -1,0 +1,51 @@
+{
+    "textBoxData": [
+        {
+            "title": "Hi from json",
+            "content": "This has been parsed from a json file. This should be index 0",
+            "buttonName": "Dope!"
+        }
+    ],
+    "triviaData":
+        [
+            {
+                "title": "What is Mars sometimes called?",
+                "question": "Pick answer",
+                "explanation": "To be filled in...",
+                "answers": [
+                    "The red planet",
+                    "The blue planet",
+                    "The yellow planet",
+                    "The grey planet"
+                ],
+                "correctAnswer": 1,
+                "scoreAmount": 1
+            },
+            {
+                "title": "Why is earth called an ocean planet?",
+                "question": "Pick answer",
+                "explanation": "To be filled in...",
+                "answers": [
+                    "Because water covers 50% of Earth's surface",
+                    "Because water covers 60% of Earth's surface",
+                    "Because water covers 70% of Earth's surface",
+                    "Because water covers 80% of Earth's surface"
+                ],
+                "correctAnswer": 3,
+                "scoreAmount": 1
+            },
+              {
+                "title": "How long does it take for Mercury to orbit around the Sun (in earth days)?",
+                "question": "Pick answer",
+                "explanation": "To be filled in...",
+                "answers": [
+                    "687 days",
+                    "365 days",
+                    "225 days",
+                    "88 days"
+                ],
+                "correctAnswer": 4,
+                "scoreAmount": 1
+            }
+        ]
+}
