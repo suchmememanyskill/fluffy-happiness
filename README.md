@@ -1,2 +1,2 @@
 # fluffy-happiness
-Unity project for the nasa hackathon, for the Breaktrough challlenge, with the team Inspace Aviators
+Unity project for the nasa hackathon, for the Breakthrough challlenge, with the team Inspace Aviators
