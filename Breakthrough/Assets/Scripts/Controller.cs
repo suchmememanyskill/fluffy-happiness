@@ -44,9 +44,10 @@ public class Controller : MonoBehaviour
         main.simulationSpeed = rb2d.velocity.y * starSpeedModifier;
     }
 
-    public void OnDestroy()
+    public void destroyShip()
     {
         Time.timeScale = 0;
         deadUIScreen.SetActive(true);
+        Destroy(gameObject);
     }
 }

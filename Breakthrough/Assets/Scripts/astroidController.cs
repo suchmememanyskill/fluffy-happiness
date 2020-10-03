@@ -42,7 +42,8 @@ public class astroidController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.GetComponent<Controller>() != null)
-            Destroy(col.gameObject);
+        Controller con = col.GetComponent<Controller>();
+        if (con != null)
+            con.destroyShip();
     }
 }
