@@ -4,6 +4,11 @@
             "title": "Hi from json",
             "content": "This has been parsed from a json file. This should be index 0",
             "buttonName": "Dope!"
+        },
+        {
+            "title": "What a view!",
+            "content": "Oh, look at that! Looks like we are going further away from the Earth! Hope we don’t encounter any abandoned satellites on the way!\n\n*When satellites stop working, they are left in space . They are called space debris and there are 20 000 artificial objects in the Earth orbit alone.* ",
+            "buttonName": "uh oh"
         }
     ],
     "triviaData":
@@ -11,7 +16,7 @@
             {
                 "title": "What is Mars sometimes called?",
                 "question": "Pick answer",
-                "explanation": "To be filled in...",
+                "explanation": "Mars is a cold desert world. It is half the size of Earth. Mars is sometimes called the Red Planet. It's red because of rusty iron in the ground. One day on Mars lasts 24.6 hours. It is just a little longer than a day on Earth. One year on Mars is 687 Earth days. It is almost twice as long as one year on Earth.",
                 "answers": [
                     "The red planet",
                     "The blue planet",
@@ -23,13 +28,13 @@
             },
             {
                 "title": "Why is earth called an ocean planet?",
-                "question": "Pick answer",
-                "explanation": "To be filled in...",
+                "question": "Because water covers .... of Earth's surface",
+                "explanation": "Note: Earth has a lot of water. It's one of the things that makes our big, blue planet so special. Our home planet Earth is a rocky, terrestrial planet. It has a solid and active surface with mountains, valleys, canyons, plains and so much more. Earth is special because it is an ocean planet. Water covers 70% of Earth's surface. Earth has just one Moon. It is the only planet to have just one moon. ",
                 "answers": [
-                    "Because water covers 50% of Earth's surface",
-                    "Because water covers 60% of Earth's surface",
-                    "Because water covers 70% of Earth's surface",
-                    "Because water covers 80% of Earth's surface"
+                    "50%",
+                    "60%",
+                    "70%",
+                    "80%"
                 ],
                 "correctAnswer": 3,
                 "scoreAmount": 1
@@ -37,7 +42,7 @@
               {
                 "title": "How long does it take for Mercury to orbit around the Sun (in earth days)?",
                 "question": "Pick answer",
-                "explanation": "To be filled in...",
+                "explanation": "How long is a year on other planets? Well, it depends on where they are orbiting! The closer a planet travels to the Sun, the more the Sun’s gravity can pull on the planet. The stronger the pull of the Sun’s gravity, the faster the planet orbits. Mercury is the closest planet to the sun (distance ~35 million miles (58 million km)) so it’s the shortest answer.\n\n\nMercury is the smallest planet in our solar system. It’s just a little bigger than Earth’s moon. It is the closest planet to the sun, but it’s actually not the hottest. Venus is hotter. ",
                 "answers": [
                     "687 days",
                     "365 days",
@@ -46,6 +51,17 @@
                 ],
                 "correctAnswer": 4,
                 "scoreAmount": 1
+            },
+            {
+              "title": "Is there are weather in space?",
+              "question": "Pick an answer",
+              "explanation": "Yes, Space Weather exits! Activity on the Sun’s surface creates a type of weather called space weather. The Sun is really far away—about 93 million miles (150 million kilometers)—from Earth. However, space weather can affect Earth and the rest of the solar system. At its worst, it can even damage satellites and cause electrical blackouts on Earth! Solar storms happen suddenly, and their effects can reach Earth within minutes. But scientists do make predictions about when solar storms are likely to occur and how strong they will be. You can check the space weather forecast just like you might check the weather forecast. NASA and other agencies operate a collection of instruments that keep an eye on the Sun and space weather.",
+              "answers": [
+                  "Yes",
+                  "No"
+              ],
+              "correctAnswer": 1,
+              "scoreAmount": 1
             }
         ]
 }

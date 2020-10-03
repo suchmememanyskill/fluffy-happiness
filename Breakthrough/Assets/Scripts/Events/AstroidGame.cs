@@ -16,11 +16,10 @@ public class AstroidGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        coll = GetComponent<BoxCollider2D>();
-        screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         var renderer = astroid.GetComponent<SpriteRenderer>();
         objectBounds.x = renderer.bounds.size.x / 2;
         objectBounds.y = renderer.bounds.size.y / 2;
+        coll = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -45,10 +44,14 @@ public class AstroidGame : MonoBehaviour
 
             Vector3 pos = new Vector3(
                 Random.Range(screenBounds.x * -1 + objectBounds.x, screenBounds.x - objectBounds.x),
-                Random.Range(screenBounds.y - Camera.main.orthographicSize * 2 + objectBounds.y, screenBounds.y - objectBounds.y) + Camera.main.orthographicSize * 4,
+                Random.Range(screenBounds.y - Camera.main.orthographicSize * 2 + objectBounds.y, screenBounds.y - objectBounds.y) + Camera.main.orthographicSize * 2,
                 1);
             GameObject obj = Instantiate(astroid, pos, Quaternion.identity);
             timer = Random.Range(spawnTimer.x, spawnTimer.y);
+        }
+        else
+        {
+            screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         }
     }
 

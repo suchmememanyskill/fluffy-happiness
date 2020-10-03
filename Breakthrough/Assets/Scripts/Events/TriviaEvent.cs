@@ -80,7 +80,6 @@ public class TriviaEvent : MonoBehaviour
 
     void SetNewTrivia()
     {
-        swapButtons(true);
         if (amountOfTrivia <= 0 || data.Count <= 0)
         {
             StopTrivia();
@@ -88,10 +87,11 @@ public class TriviaEvent : MonoBehaviour
         }
 
         setRandomTrivia();
+        swapButtons(true);
         titleObj.GetComponent<Text>().text = currentTrivia.title;
         contentObj.GetComponent<Text>().text = currentTrivia.question;
 
-        for (int i = 0; i < btnObj.Count - 1; i++)
+        for (int i = 0; i < btnObj.Count - 1 && i < currentTrivia.answers.Count; i++)
         {
             btnObj[i].transform.Find("Text").GetComponent<Text>().text = currentTrivia.answers[i];
         }
@@ -101,7 +101,10 @@ public class TriviaEvent : MonoBehaviour
 
     void swapButtons(bool triviaMode)
     {
-        for (int i = 0; i < btnObj.Count - 1; i++)
+        foreach (GameObject x in btnObj)
+            x.SetActive(false);
+
+        for (int i = 0; i < btnObj.Count - 1 && i < currentTrivia.answers.Count; i++)
         {
             btnObj[i].SetActive(triviaMode);
         }
@@ -112,7 +115,9 @@ public class TriviaEvent : MonoBehaviour
     {
         string title = (answer == currentTrivia.correctAnswer) ? "Correct! " : "Incorrect! ";
 
-        title += currentTrivia.answers[currentTrivia.correctAnswer - 1] + " is the correct answer";
+        if (answer != currentTrivia.correctAnswer)
+            title += currentTrivia.answers[currentTrivia.correctAnswer - 1] + " is the correct answer";
+
         titleObj.GetComponent<Text>().text = title;
         contentObj.GetComponent<Text>().text = currentTrivia.explanation;
         swapButtons(false);

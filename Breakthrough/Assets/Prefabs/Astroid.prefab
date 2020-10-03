@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6725195279650730982}
   - component: {fileID: 6725195279650730981}
   - component: {fileID: 6725195279650730980}
-  - component: {fileID: 6725195279650731003}
+  - component: {fileID: -8338057602083700605}
   m_Layer: 0
   m_Name: Astroid
   m_TagString: Untagged
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 315e8f0bdc1bb2241bb75a6e74a98b07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b624e98c495dd2d469e3d88909b16b86, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -122,8 +122,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &6725195279650731003
-CircleCollider2D:
+--- !u!68 &-8338057602083700605
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -135,6 +135,16 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.11552829}
-  serializedVersion: 2
-  m_Radius: 2.8794708
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 4.2494893, y: 3.9114301}
+  - {x: -1.7377776, y: 1.9897089}
+  - {x: -4.3503637, y: 0.52634305}
+  - {x: -3.2539718, y: -1.8181211}
+  - {x: -4.071501, y: -2.2645245}
+  - {x: -3.4142592, y: -3.775238}
+  - {x: -0.18886876, y: -2.4930859}
+  - {x: -1.1625866, y: -0.28156567}
+  - {x: 4.385351, y: 2.0308096}
+  - {x: 4.247331, y: 3.859184}
