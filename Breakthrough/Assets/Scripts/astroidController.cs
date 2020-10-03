@@ -20,7 +20,7 @@ public class astroidController : MonoBehaviour
             Random.Range(minMaxVSpeed.x, minMaxVSpeed.y) * -1);
 
         rb.AddForce(force);
-        rb.AddTorque(rotation * (Random.Range(0, 1) == 0 ? -1 : 1));
+        rb.AddTorque(rotation * (Random.Range(0, 2) == 0 ? -1 : 1));
 
         uiWarn = Instantiate(UIWarnPrefab, new Vector3(0, screenBounds.y - 1, 1), Quaternion.identity);
         var UIWarnVars = uiWarn.GetComponent<Follower>();

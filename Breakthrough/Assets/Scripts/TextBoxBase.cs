@@ -7,12 +7,19 @@ public class TextBoxBase : MonoBehaviour
 {
     public string title;
     public string content;
-    public Text titleObj;
-    public Text contentObj;
-    public Button confirmObj;
+    private GameObject titleObj;
+    private GameObject contentObj;
+    private GameObject btnObj;
     public GameObject rootObj;
     public GameObject mainCamera;
     private bool hasActivated;
+
+    private void Start()
+    {
+        titleObj = rootObj.transform.Find("Title").gameObject;
+        contentObj = rootObj.transform.Find("Content").gameObject;
+        btnObj = rootObj.transform.Find("Button").gameObject;
+    }
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -27,18 +34,18 @@ public class TextBoxBase : MonoBehaviour
 
     public void ShowDialog()
     {
-        mainCamera.GetComponent<Follower>().enabled = false;
+        mainCamera.GetComponent<CameraTools>().stopCamera();
         rootObj.SetActive(true);
-        titleObj.text = title;
-        contentObj.text = content;
-        confirmObj.onClick.AddListener(HideDialog);
+        titleObj.GetComponent<Text>().text = title;
+        contentObj.GetComponent<Text>().text = content;
+        btnObj.GetComponent<Button>().onClick.AddListener(HideDialog);
         hasActivated = true;
     }
 
     public void HideDialog()
     {
-        mainCamera.GetComponent<Follower>().enabled = true;
+        mainCamera.GetComponent<CameraTools>().stopCamera();
         rootObj.SetActive(false);
-        confirmObj.onClick.RemoveAllListeners();
+        btnObj.GetComponent<Button>().onClick.RemoveAllListeners();
     }
 }

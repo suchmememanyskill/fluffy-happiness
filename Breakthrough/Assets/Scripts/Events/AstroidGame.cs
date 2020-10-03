@@ -30,8 +30,7 @@ public class AstroidGame : MonoBehaviour
         {
             if (duration <= 0)
             {
-                var FollowCamObj = mainCamera.GetComponent<Follower>();
-                FollowCamObj.enabled = true;
+                mainCamera.GetComponent<CameraTools>().startCamera();
                 activated = false;
                 return;
             }
@@ -57,7 +56,6 @@ public class AstroidGame : MonoBehaviour
     {
         activated = true;
         coll.enabled = false;
-        var FollowCamObj = mainCamera.GetComponent<Follower>();
-        FollowCamObj.enabled = false;
+        mainCamera.GetComponent<CameraTools>().stopCamera();
     }
 }

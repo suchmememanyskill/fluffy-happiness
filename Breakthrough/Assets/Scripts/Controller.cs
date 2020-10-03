@@ -11,6 +11,7 @@ public class Controller : MonoBehaviour
     private float vertical;
     public GameObject stars;
     public float starSpeedModifier;
+    public bool hasLiftedOff;
 
     public GameObject deadUIScreen;
     //public Transform bullet;
@@ -33,6 +34,9 @@ public class Controller : MonoBehaviour
             rb2d.velocity = Vector2.MoveTowards(rb2d.velocity, Vector2.zero, accSpeed * Time.deltaTime);
         else
             vertical = Input.GetKey(KeyCode.Mouse0) ? 1 : 0;
+
+        if (!hasLiftedOff && (Input.GetKey(KeyCode.Mouse0) || Input.GetKey(KeyCode.Mouse1)))
+            hasLiftedOff = true;
     }
     
 
@@ -49,5 +53,10 @@ public class Controller : MonoBehaviour
         Time.timeScale = 0;
         deadUIScreen.SetActive(true);
         Destroy(gameObject);
+    }
+
+    public void stopShip()
+    {
+        rb2d.velocity = Vector2.zero;
     }
 }

@@ -1,0 +1,30 @@
+{
+    "triviaQuestions": [
+        {
+            "title": "test",
+            "question": "Pick answer 1",
+            "explanation": "Not much to this",
+            "answers": [
+                "1",
+                "2",
+                "3",
+                "4\nNewline?"
+            ],
+            "correctAnswer": 1,
+            "scoreAmount": 1
+        },
+        {
+            "title": "test no.2",
+            "question": "Pick answer 2",
+            "explanation": "Not much to this",
+            "answers": [
+                "1",
+                "2",
+                "3",
+                "4\nNewline?"
+            ],
+            "correctAnswer": 2,
+            "scoreAmount": 1
+        }
+    ]
+}
