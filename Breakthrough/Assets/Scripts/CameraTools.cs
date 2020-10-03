@@ -17,5 +17,12 @@ public class CameraTools : MonoBehaviour
     public void startCamera()
     {
         GetComponent<Follower>().enabled = true;
+        ship.GetComponent<Controller>().userHasControl = true;
+    }
+
+    public void stopCameraAndPlayer()
+    {
+        ship.GetComponent<Controller>().userHasControl = false;
+        stopCamera();
     }
 }

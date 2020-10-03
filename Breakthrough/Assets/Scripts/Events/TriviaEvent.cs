@@ -61,7 +61,7 @@ public class TriviaEvent : MonoBehaviour
     void StartTrivia()
     {
         hasActivated = true;
-        mainCamera.GetComponent<CameraTools>().stopCamera();
+        mainCamera.GetComponent<CameraTools>().stopCameraAndPlayer();
         rootObj.SetActive(true);
 
         btnObj[0].GetComponent<Button>().onClick.AddListener(btn1Func);

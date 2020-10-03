@@ -25,6 +25,6 @@ public class MultipliedFollower : MonoBehaviour
 
         temp += ((Vector2)toFollow.position - startVector) * moveMultiplier;
 
-        transform.position = new Vector3(temp.x, temp.y, 1);
+        transform.position = new Vector3(temp.x, temp.y, transform.position.z);
     }
 }

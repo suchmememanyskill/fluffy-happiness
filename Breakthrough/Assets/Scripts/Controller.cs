@@ -12,6 +12,7 @@ public class Controller : MonoBehaviour
     public GameObject stars;
     public float starSpeedModifier;
     public bool hasLiftedOff;
+    public bool userHasControl;
 
     public GameObject deadUIScreen;
     //public Transform bullet;
@@ -19,6 +20,7 @@ public class Controller : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        Time.timeScale = 1;
     }
 
     
@@ -42,6 +44,9 @@ public class Controller : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (!userHasControl)
+            return;
+
         Vector2 movement = new Vector2(vertical, 0);
         rb2d.AddRelativeForce(movement * accSpeed);
         var main = stars.GetComponent<ParticleSystem>().main;

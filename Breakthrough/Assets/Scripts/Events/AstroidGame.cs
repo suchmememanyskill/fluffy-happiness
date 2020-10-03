@@ -45,7 +45,7 @@ public class AstroidGame : MonoBehaviour
 
             Vector3 pos = new Vector3(
                 Random.Range(screenBounds.x * -1 + objectBounds.x, screenBounds.x - objectBounds.x),
-                Random.Range(screenBounds.y - Camera.main.orthographicSize * 2 + objectBounds.y, screenBounds.y - objectBounds.y) + Camera.main.orthographicSize * 3,
+                Random.Range(screenBounds.y - Camera.main.orthographicSize * 2 + objectBounds.y, screenBounds.y - objectBounds.y) + Camera.main.orthographicSize * 4,
                 1);
             GameObject obj = Instantiate(astroid, pos, Quaternion.identity);
             timer = Random.Range(spawnTimer.x, spawnTimer.y);
