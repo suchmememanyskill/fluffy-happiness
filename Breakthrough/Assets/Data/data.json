@@ -1,5 +1,10 @@
 {
     "textBoxData": [
+        {
+            "title": "Hi from json",
+            "content": "This has been parsed from a json file. This should be index 0",
+            "buttonName": "Dope!"
+        }
     ],
     "triviaData":
         [

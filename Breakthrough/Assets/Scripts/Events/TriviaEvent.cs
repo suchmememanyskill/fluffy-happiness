@@ -38,7 +38,7 @@ public class TriviaEvent : MonoBehaviour
         btnObj.Add(rootObj.transform.Find("btn4").gameObject);
         btnObj.Add(rootObj.transform.Find("btn5").gameObject);
         DataGatherer dataGatherer = DataGatherer.Get();
-        data = dataGatherer.getCopyOfTrivia();
+        data = dataGatherer.GetCopyOfTrivia();
     }
 
     private void setRandomTrivia()

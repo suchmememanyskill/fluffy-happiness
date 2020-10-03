@@ -35,13 +35,18 @@ public class DataGatherer
     private Data data;
     public List<TextBoxData> GetTextBoxData() => data.textBoxData;
 
-    public List<Trivia> getCopyOfTrivia()
+    public List<Trivia> GetCopyOfTrivia()
     {
         List<Trivia> trivia = new List<Trivia>();
         foreach (Trivia t in data.triviaData)
             trivia.Add(t);
         
         return trivia;
+    }
+
+    public TextBoxData GetTextBox(int index)
+    {
+        return data.textBoxData[index];
     }
 
     private static DataGatherer single;
