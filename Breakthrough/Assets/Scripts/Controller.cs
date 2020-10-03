@@ -39,6 +39,11 @@ public class Controller : MonoBehaviour
 
         if (!hasLiftedOff && (Input.GetKey(KeyCode.Mouse0) || Input.GetKey(KeyCode.Mouse1)))
             hasLiftedOff = true;
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
     
 
