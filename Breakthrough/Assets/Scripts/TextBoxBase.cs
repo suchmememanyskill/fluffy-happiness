@@ -21,6 +21,12 @@ public class TextBoxBase : MonoBehaviour
         btnObj = rootObj.transform.Find("Button").gameObject;
     }
 
+    public virtual void addExtra()
+    { }
+
+    public virtual void removeExtra()
+    { }
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if (hasActivated)
@@ -40,6 +46,7 @@ public class TextBoxBase : MonoBehaviour
         contentObj.GetComponent<Text>().text = content;
         btnObj.GetComponent<Button>().onClick.AddListener(HideDialog);
         hasActivated = true;
+        addExtra();
     }
 
     public void HideDialog()
@@ -47,5 +54,6 @@ public class TextBoxBase : MonoBehaviour
         mainCamera.GetComponent<CameraTools>().stopCamera();
         rootObj.SetActive(false);
         btnObj.GetComponent<Button>().onClick.RemoveAllListeners();
+        removeExtra();
     }
 }

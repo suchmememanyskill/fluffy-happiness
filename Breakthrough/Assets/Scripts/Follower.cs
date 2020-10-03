@@ -9,7 +9,14 @@ public class Follower : MonoBehaviour
     public bool doNotGoBackOnY;
     public Vector2 offset;
     public Vector2 startFollow;
- 
+    public Vector2 moveMultiplier;
+
+    private void Start()
+    {
+        if (moveMultiplier == Vector2.zero)
+            moveMultiplier = new Vector2(1, 1);
+    }
+
     // Update is called once per frame
     void LateUpdate()
     {
@@ -23,11 +30,10 @@ public class Follower : MonoBehaviour
         Vector3 temp = transform.position;
 
         if (followX)
-            temp.x = toFollow.position.x + offset.x;
+            temp.x = (toFollow.position.x * moveMultiplier.x) + offset.x;
         
-
         if (followY)
-            temp.y = toFollow.position.y + offset.y;
+            temp.y = (toFollow.position.y * moveMultiplier.y) + offset.y;
 
         if (doNotGoBackOnY && temp.y < transform.position.y)
             temp.y = transform.position.y;

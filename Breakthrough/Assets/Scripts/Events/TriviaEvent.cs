@@ -5,16 +5,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
-[Serializable]
-public class Trivia
-{
-    public string title;
-    public string question;
-    public string explanation;
-    public List<string> answers;
-    public int correctAnswer;
-    public int scoreAmount;
-}
+
 
 [Serializable]
 public class TriviaList
@@ -32,7 +23,7 @@ public class TriviaEvent : MonoBehaviour
     public GameObject mainCamera;
     private bool hasActivated;
     public int amountOfTrivia;
-    TriviaList data;
+    List<Trivia> data;
     Trivia currentTrivia;
 
     // Start is called before the first frame update
@@ -46,22 +37,14 @@ public class TriviaEvent : MonoBehaviour
         btnObj.Add(rootObj.transform.Find("btn3").gameObject);
         btnObj.Add(rootObj.transform.Find("btn4").gameObject);
         btnObj.Add(rootObj.transform.Find("btn5").gameObject);
-        readJsonData();
-    }
-
-    void readJsonData()
-    {
-        string json = File.ReadAllText(Application.dataPath + "/Data/trivia.json");
-        data = JsonUtility.FromJson<TriviaList>(json);
-        Debug.Log(json);
-        Debug.Log(data);
-        Debug.Log(data.triviaQuestions.Count);
+        DataGatherer dataGatherer = DataGatherer.Get();
+        data = dataGatherer.getCopyOfTrivia();
     }
 
     private void setRandomTrivia()
     {
-        currentTrivia = data.triviaQuestions[UnityEngine.Random.Range(0, data.triviaQuestions.Count)];
-        data.triviaQuestions.Remove(currentTrivia);
+        currentTrivia = data[UnityEngine.Random.Range(0, data.Count)];
+        data.Remove(currentTrivia);
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -98,7 +81,7 @@ public class TriviaEvent : MonoBehaviour
     void SetNewTrivia()
     {
         swapButtons(true);
-        if (amountOfTrivia <= 0)
+        if (amountOfTrivia <= 0 || data.Count <= 0)
         {
             StopTrivia();
             return;
