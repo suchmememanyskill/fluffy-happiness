@@ -9,6 +9,8 @@ ScriptsOnlyBuild:
     - InFrame
     - MultipliedFollower
     - Spinner
+    - TextBoxBase
+    - TextBoxNoExit
     - TextBoxOneObj
     - TriviaEvent
     - astroidController
@@ -61,6 +63,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 68
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
@@ -70,41 +74,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11252}
     - Class: 114
-      Script: {instanceID: 11542}
+      Script: {instanceID: 11428}
     - Class: 114
-      Script: {instanceID: 11596}
+      Script: {instanceID: 11544}
     - Class: 114
-      Script: {instanceID: 11776}
+      Script: {instanceID: 11598}
     - Class: 114
-      Script: {instanceID: 12100}
+      Script: {instanceID: 11778}
+    - Class: 114
+      Script: {instanceID: 11790}
     - Class: 114
       Script: {instanceID: 12102}
     - Class: 114
-      Script: {instanceID: 12252}
+      Script: {instanceID: 12104}
     - Class: 114
-      Script: {instanceID: 12268}
+      Script: {instanceID: 12254}
     - Class: 114
-      Script: {instanceID: 12386}
+      Script: {instanceID: 12270}
     - Class: 114
-      Script: {instanceID: 12806}
+      Script: {instanceID: 12388}
     - Class: 114
-      Script: {instanceID: 12846}
+      Script: {instanceID: 12808}
     - Class: 114
-      Script: {instanceID: 12976}
+      Script: {instanceID: 12848}
     - Class: 114
-      Script: {instanceID: 13024}
+      Script: {instanceID: 12978}
     - Class: 114
-      Script: {instanceID: 13110}
+      Script: {instanceID: 13026}
     - Class: 114
-      Script: {instanceID: 13274}
+      Script: {instanceID: 13112}
     - Class: 114
-      Script: {instanceID: 13432}
+      Script: {instanceID: 13276}
     - Class: 114
-      Script: {instanceID: 13486}
+      Script: {instanceID: 13434}
     - Class: 114
-      Script: {instanceID: 13748}
+      Script: {instanceID: 13488}
     - Class: 114
-      Script: {instanceID: 14358}
+      Script: {instanceID: 13750}
+    - Class: 114
+      Script: {instanceID: 14360}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -152,6 +160,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: fd6c18e6fe9cc83504dfd5e49b6041ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TextBoxNoExit
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -394,7 +408,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 2cc043652b72c62102948cb9aabe064c
+      Hash: 9dffabcb302dd95f242da13a7d535a44
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TriviaEvent
@@ -490,7 +504,7 @@ ScriptsOnlyBuild:
     className: InputField
   - hash:
       serializedVersion: 2
-      Hash: ea713d8c82c13e374ab0d0a1a8c4cde5
+      Hash: 7f7a64506db03f2b3fac1f5e0e74ea47
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Controller
@@ -689,4 +703,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/SuchMeme/Desktop/Build/c/v2/Breakthrough.exe
+  playerPath: C:/Users/SuchMeme/Desktop/Build/c/v4/DragonSpace.exe
