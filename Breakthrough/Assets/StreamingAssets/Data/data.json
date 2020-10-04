@@ -83,11 +83,11 @@
                 "question": "A black hole or the sun?",
                 "explanation": "A typical stellar-class of black hole has a mass between about 3 and 10 solar masses. The mass of a black hole is usually expressed in something called a \"solar mass.\" One solar mass is defined as the mass of our Sun. This is a very large number, about 2 x 10^30 kilograms. That's 2 with 30 zeroes after it, or written out: 2,000,000,000,000,000,000,000,000,000,000. This is about one million times more than the mass of the Earth.  \n\nA black hole is an area of such immense gravity that nothing -- not even light -- can escape from it.",
                 "answers": [
-                    "Black hole",
                     "Sun",
+                    "Black hole",
                     "Equal"
                 ],
-                "correctAnswer": 1,
+                "correctAnswer": 2,
                 "scoreAmount": 1
             },
             {
@@ -95,12 +95,12 @@
                 "question": "Pick an answer",
                 "explanation": "Our sun is 4,500,000,000 years old. That's a lot of zeroes. That\u2019s four and a half billion. How do we know the Sun's age? We look at the age of the whole solar system, because it all came together around the same time. To get this number, we look for the oldest things we can find. Moon rocks work well for this. When astronauts brought them back for scientists to study them, they were able to find out how old they are. If our Sun is four and a half billion years old, how much longer will it shine? Stars like our Sun burn for about nine or 10 billion years. So our Sun is about halfway through its life. But don\u2019t worry. It still has about 5,000,000,000\u2014five billion\u2014years to go. \n\nWhen those five billion years are up, the Sun will become a red giant. That means the Sun will get bigger and cooler at the same time. When that happens, it will be different than the Sun we know today. As a red giant, our Sun will become about 2,000 times brighter than it is now!",
                 "answers": [
-                    "4,5 billion years",
                     "2020 years",
                     "1 billion years",
+                    "4,5 billion years",
                     "10 billion years"
                 ],
-                "correctAnswer": 1,
+                "correctAnswer": 3,
                 "scoreAmount": 1
             },
             {
