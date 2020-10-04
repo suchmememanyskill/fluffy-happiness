@@ -15,6 +15,7 @@ public class Controller : MonoBehaviour
     public bool userHasControl;
     public float maxSpeed;
     public int score = 0;
+    public GameObject exhaust;
 
     public GameObject deadUIScreen;
     //public Transform bullet;
@@ -26,7 +27,7 @@ public class Controller : MonoBehaviour
     }
 
     
-    void Update()
+    void LateUpdate()
     {
         var mouse = Input.mousePosition;
         var screenPoint = Camera.main.WorldToScreenPoint(transform.localPosition);
@@ -34,12 +35,18 @@ public class Controller : MonoBehaviour
         var angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(new Vector3(0, 0, angle)), turnSpeed * Time.deltaTime);
 
+        exhaust.SetActive(true);
         if (Input.GetKey(KeyCode.Mouse1))
             rb2d.velocity = Vector2.MoveTowards(rb2d.velocity, Vector2.zero, accSpeed * Time.deltaTime);
+        else if (Input.GetKey(KeyCode.Mouse0))
+            vertical = 1;
         else
-            vertical = Input.GetKey(KeyCode.Mouse0) ? 1 : 0;
+        {
+            vertical = 0;
+            exhaust.SetActive(false);
+        }
 
-        if (!hasLiftedOff && (Input.GetKey(KeyCode.Mouse0) || Input.GetKey(KeyCode.Mouse1)))
+        if (!hasLiftedOff && userHasControl && (Input.GetKey(KeyCode.Mouse0) || Input.GetKey(KeyCode.Mouse1)))
             hasLiftedOff = true;
 
         if (Input.GetKey(KeyCode.Escape))

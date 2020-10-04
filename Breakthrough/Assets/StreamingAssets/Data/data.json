@@ -6,9 +6,24 @@
             "buttonName": "Dope!"
         },
         {
+            "title": "Lifting off",
+            "content": "Now that i'm done on my expedition on the moon, i can head to mars! I also found a new type of engine here, called the Nuclear Propulsion engine. It seems to be capable of pushing out more thrust than my current engine\n\n\nNuclear propulsion stats:\n10000km/s (=3.3% of the speed of light)\nMass of spaceship (Empty): 100000t\nThis is pretty fast, but not fast enough to leave our home galaxy!",
+            "buttonName": "Lets go!"
+        },
+        {
             "title": "What a view!",
             "content": "Oh, look at that! Looks like we are going further away from the Earth! Hope we don’t encounter any abandoned satellites on the way!\n\n*When satellites stop working, they are left in space . They are called space debris and there are 20 000 artificial objects in the Earth orbit alone.* ",
             "buttonName": "uh oh"
+        },
+        {
+            "title": "That was close...",
+            "content": "Wow, that was a tough one. The more you know...\n\nGood news, mars seems to be approaching rather quickly",
+            "buttonName": "Lets push on"
+        },
+        {
+            "title": "We have arrived at mars!",
+            "content": "You arrived on Mars! That was fast, wasn’t it? That’s the power of the advanced propulsion systems! However, if you want to travel even further and explore the cosmos you will need something... even stronger.  There are discussions about a new system that can travel FASTER THAN LIGHT.\n\n\nThis was a demo of our game. You can press ESC to quit the game",
+            "buttonName": "heh. There is no button here"
         }
     ],
     "triviaData":
