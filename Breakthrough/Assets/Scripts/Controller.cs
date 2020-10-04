@@ -13,6 +13,8 @@ public class Controller : MonoBehaviour
     public float starSpeedModifier;
     public bool hasLiftedOff;
     public bool userHasControl;
+    public float maxSpeed;
+    public int score = 0;
 
     public GameObject deadUIScreen;
     //public Transform bullet;
@@ -53,7 +55,8 @@ public class Controller : MonoBehaviour
             return;
 
         Vector2 movement = new Vector2(vertical, 0);
-        rb2d.AddRelativeForce(movement * accSpeed);
+        if (rb2d.velocity.y <= maxSpeed)
+            rb2d.AddRelativeForce(movement * accSpeed);
         var main = stars.GetComponent<ParticleSystem>().main;
         main.simulationSpeed = rb2d.velocity.y * starSpeedModifier;
     }

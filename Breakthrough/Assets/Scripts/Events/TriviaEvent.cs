@@ -23,6 +23,7 @@ public class TriviaEvent : MonoBehaviour
     public GameObject mainCamera;
     private bool hasActivated;
     public int amountOfTrivia;
+    public GameObject ship;
     List<Trivia> data;
     Trivia currentTrivia;
 
@@ -117,6 +118,8 @@ public class TriviaEvent : MonoBehaviour
 
         if (answer != currentTrivia.correctAnswer)
             title += currentTrivia.answers[currentTrivia.correctAnswer - 1] + " is the correct answer";
+        else
+            ship.GetComponent<Controller>().score += currentTrivia.scoreAmount;
 
         titleObj.GetComponent<Text>().text = title;
         contentObj.GetComponent<Text>().text = currentTrivia.explanation;

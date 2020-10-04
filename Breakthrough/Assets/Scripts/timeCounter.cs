@@ -24,6 +24,6 @@ public class timeCounter : MonoBehaviour
         local -= minutes * 60;
 
 
-        GetComponent<Text>().text = $"Time since departure: {days} days, {hours} hours, {minutes} minutes, {local} seconds";
+        GetComponent<Text>().text = $"Time since departure: {days} days, {hours} hours, {minutes} minutes, {local} seconds\n\nScore: {ship.GetComponent<Controller>().score}";
     }
 }

@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class TextBoxBase : MonoBehaviour
 {
     public int textIndex;
-    private GameObject titleObj;
-    private GameObject contentObj;
-    private GameObject btnObj;
+    protected GameObject titleObj;
+    protected GameObject contentObj;
+    protected GameObject btnObj;
     public GameObject rootObj;
     public GameObject mainCamera;
-    private bool hasActivated;
-    private TextBoxData textBox;
+    protected bool hasActivated;
+    protected TextBoxData textBox;
 
     private void Start()
     {

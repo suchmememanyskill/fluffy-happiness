@@ -53,7 +53,7 @@
                 "scoreAmount": 1
             },
             {
-              "title": "Is there are weather in space?",
+              "title": "Is there weather in space?",
               "question": "Pick an answer",
               "explanation": "Yes, Space Weather exits! Activity on the Sun’s surface creates a type of weather called space weather. The Sun is really far away—about 93 million miles (150 million kilometers)—from Earth. However, space weather can affect Earth and the rest of the solar system. At its worst, it can even damage satellites and cause electrical blackouts on Earth! Solar storms happen suddenly, and their effects can reach Earth within minutes. But scientists do make predictions about when solar storms are likely to occur and how strong they will be. You can check the space weather forecast just like you might check the weather forecast. NASA and other agencies operate a collection of instruments that keep an eye on the Sun and space weather.",
               "answers": [
@@ -62,6 +62,44 @@
               ],
               "correctAnswer": 1,
               "scoreAmount": 1
+            },
+            {
+                "title": "What object has more mass",
+                "question": "A black hole or the sun?",
+                "explanation": "A typical stellar-class of black hole has a mass between about 3 and 10 solar masses. The mass of a black hole is usually expressed in something called a \"solar mass.\" One solar mass is defined as the mass of our Sun. This is a very large number, about 2 x 10^30 kilograms. That's 2 with 30 zeroes after it, or written out: 2,000,000,000,000,000,000,000,000,000,000. This is about one million times more than the mass of the Earth.  \n\nA black hole is an area of such immense gravity that nothing -- not even light -- can escape from it.",
+                "answers": [
+                    "Black hole",
+                    "Sun",
+                    "Equal"
+                ],
+                "correctAnswer": 1,
+                "scoreAmount": 1
+            },
+            {
+                "title": "How old is the Sun?",
+                "question": "Pick an answer",
+                "explanation": "Our sun is 4,500,000,000 years old. That's a lot of zeroes. That\u2019s four and a half billion. How do we know the Sun's age? We look at the age of the whole solar system, because it all came together around the same time. To get this number, we look for the oldest things we can find. Moon rocks work well for this. When astronauts brought them back for scientists to study them, they were able to find out how old they are. If our Sun is four and a half billion years old, how much longer will it shine? Stars like our Sun burn for about nine or 10 billion years. So our Sun is about halfway through its life. But don\u2019t worry. It still has about 5,000,000,000\u2014five billion\u2014years to go. \n\nWhen those five billion years are up, the Sun will become a red giant. That means the Sun will get bigger and cooler at the same time. When that happens, it will be different than the Sun we know today. As a red giant, our Sun will become about 2,000 times brighter than it is now!",
+                "answers": [
+                    "4,5 billion years",
+                    "2020 years",
+                    "1 billion years",
+                    "10 billion years"
+                ],
+                "correctAnswer": 1,
+                "scoreAmount": 1
+            },
+            {
+                "title": "How many moons does pluto have",
+                "question": "Pick an answer",
+                "explanation": "We on Earth have just one moon, but some planets have dozens of them. Others don\u2019t have any. Pluto's large moon Charon is about half the size of Pluto. Like Earth's Moon, Charon may have formed from debris resulting from an early collision of an impactor with Pluto. Scientists using the Hubble Space Telescope to study Pluto found four more small moons.  \n\nMost moons in our solar system are named for mythological characters from a wide variety of cultures. The newest moons discovered at Saturn, for example, are named for Norse gods such as Bergelmir, a giant.",
+                "answers": [
+                    "None",
+                    "1 moon",
+                    "12 moons",
+                    "5 moons"
+                ],
+                "correctAnswer": 4,
+                "scoreAmount": 2
             }
         ]
 }
